@@ -96,11 +96,16 @@ h4 {
   height: 250px;
 }
 
-input {
-  font-family: WonderText;
+.btn-input {
   text-align-last: center;
+  -moz-text-align-last: center;
+  -ms-text-align-last: center;
+}
+
+.btn-input input {
+  font-family: WonderText;
   margin: auto;
-  display : table-cell;
+  display: table-cell;
   font-size: 20px;
 }
 

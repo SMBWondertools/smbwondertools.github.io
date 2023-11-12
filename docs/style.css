@@ -95,3 +95,67 @@ h4 {
   /* box-shadow: 0px 0px 10px 10px pink; */
   height: 250px;
 }
+
+input {
+  font-family: WonderText;
+  text-align-last: center;
+  margin: auto;
+  display : table-cell;
+  font-size: 20px;
+}
+
+input[type=range] {
+  width: 25%;
+  transform: scale(2);
+  margin: 0 auto;
+  display: block;
+}
+
+button {
+  font-family: WonderText;
+  font-size: 30px;
+  margin: 0 auto;
+  display: block;
+}
+
+span {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.backgrounds {
+  width: 90%;
+  display: contents;
+}
+
+.background {
+  height: 100px;
+  margin: 5px 5px;
+  transition: 0.2s;
+  box-shadow: 0px 0px 0px 0px white;
+}
+
+.background-clicked {
+  height: 100px;
+  margin: 5px 5px;
+  transition: 0.2s;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 10px violet;
+}
+
+.background:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 10px white;
+}
+
+.background-clicked:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 10px violet;
+}
+
+.generated {
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0px 0px 10px 10px black;
+}

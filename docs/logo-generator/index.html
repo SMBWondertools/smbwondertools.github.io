@@ -8,16 +8,31 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
-    <img class="center-logo" src="../img/logo_generator.png">
+    <script defer src="logogen.js"></script>
 
+    <img class="center-logo" src="../img/logo_generator.png">
     <br>
     <br>
     <br>
     <div class="text-box">
         <br>
         <h1>Pick a background:</h1>
+        <div class="backgrounds" id="backgrounds">
+        </div>
         <h1>Upload your image:</h1>
+        <input type="file" id="image_upload" name="image_upload" accept="image/png, image/jpeg" />
         <h2>Square images produce the best results!</h2>
+        <h2>Image scale in image:</h2>
+        <input type="range" min="1" max="100" value="75" class="slider" id="scale_range">
+        <br>
+        <span id="scale_text" style="font-size: xx-large;">75%</span>
+        <br>
+        <br>
+        <img width="640" height="640" id="generated" class="generated">
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
     </div>
     <br>
@@ -25,5 +40,6 @@
     <div class="copyright">
         <span>©2023<br>Managed and Created by CharlesDev</span>
     </div>
+    <canvas width="1280" height="1280" style="position: fixed; visibility: none;" id="generator-canvas"></canvas>
 </body>
 </html>

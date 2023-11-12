@@ -1,4 +1,4 @@
-background_count = 37
+background_count = 73;
 
 let clicked = null;
 

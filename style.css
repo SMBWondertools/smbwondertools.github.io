@@ -1,0 +1,97 @@
+@font-face {
+  font-family: WonderText;
+  src: url("font/ninP-DIN2014-ADD4-B.bfotf.otf");
+}
+
+@font-face {
+  font-family: WonderText;
+  src: url("font/ninP-DIN2014-ADD4-XB.bfotf.otf");
+  font-weight: bold;
+}
+
+body {
+  background-image: url("img/bg1.png");
+  background-size: cover;
+  font-family: WonderText;
+}
+
+.center-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-hoverable {
+  content: url("img/wondertoolscommunity.png");
+  transition: 0.2s;
+}
+
+.logo-hoverable:hover {
+  cursor: pointer;
+  content: url("img/wondertoolscommunity-hover.png");
+  transform: scale(1.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.text-box {
+  background-color: rgba(25, 25, 25, 0.8);
+  color: white;
+  margin: auto;
+  width: 60%;
+  box-shadow: 0px 0px 10px 10px white;
+  backdrop-filter: blur(10px);
+}
+
+.text-box ul {
+  font-size: x-large;
+  width: 20%;
+  margin: auto;
+}
+
+.text-box li {
+  text-align: center;
+}
+
+h4 {
+  color: gray;
+}
+
+.text-box a {
+  color: pink;
+}
+
+.text-box a:visited {
+  color: pink;
+}
+
+.featured-mods {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+.featured-mod {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: fit-content;
+}
+
+.featured-mod img {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  box-shadow: 0px 0px 0px 0px white;
+  transition: 0.2s;
+}
+
+.featured-mod img:hover {
+  /* box-shadow: 0px 0px 10px 10px pink; */
+  height: 250px;
+}
